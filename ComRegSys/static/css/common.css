@@ -6,10 +6,13 @@ div.container {
 .main {
   min-height: 200px;
 }
+header,
+footer {
+  background: rgba(229, 229, 229, 0.44);
+}
 /*-- 测试样式  end--*/
-/*-- 公共注释  start--*/
+/*-- 公共部分  start--*/
 body {
-  font-size: 12px;
   min-width: 500px;
 }
 .fl {
@@ -18,12 +21,9 @@ body {
 .fr {
   float: right;
 }
-header,
-footer {
-  background: rgba(229, 229, 229, 0.44);
-}
-/*-- 公共注释  end--*/
+/*-- 公共部分  end--*/
 /*-- 游客公共部分  start--*/
+/*-- header部分  start--*/
 /*-- top部分 --*/
 .top {
   height: 40px;
@@ -45,7 +45,12 @@ footer {
   text-indent: -2000em;
 }
 .search {
+  /*-- search部分 --*/
   width: 250px;
   padding: 20px 0 20px 0;
 }
+/*-- nav部分 --*/
+/*-- header部分  end--*/
+/*-- footer部分  start--*/
+/*-- footer部分  end--*/
 /*-- 游客公共部分  end--*/
