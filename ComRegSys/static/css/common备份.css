@@ -1,21 +1,65 @@
 @charset "utf-8";
-
-/*-- 公共注释  start--*/
-body{
-    font-size:16px;
+/*-- 测试样式  start--*/
+div.container {
+    border: #000000 solid 1px;
 }
-.fl{
-    float:left;
+.main {
+    min-height: 200px;
 }
-.fr{
+header,
+footer {
+    background: rgba(229, 229, 229, 0.44);
+}
+/*-- 测试样式  end--*/
+/*-- 公共部分  start--*/
+body {
+    min-width: 500px;
+}
+.fl {
+    float: left;
+}
+.fr {
     float: right;
 }
-/*-- 公共注释  end--*/
+/*-- 公共部分  end--*/
 /*-- 游客公共部分  start--*/
-.top{
-    height:60px;
-    line-height:60px;
+/*-- header部分  start--*/
+/*-- top部分 --*/
+.top {
+    height: 40px;
+    line-height: 40px;
     color: #c7cccc;
     background: #343434;
 }
+/*-- logo-search部分 --*/
+.logo {
+    /*-- logo部分 --*/
+    width: 200px;
+    height: 50px;
+}
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../imgs/logo.jpg') no-repeat;
+    text-indent: -2000em;
+}
+.search {
+    /*-- search部分 --*/
+    width: 250px;
+    padding: 20px 0 20px 0;
+}
+/*-- nav部分 --*/
+/*-- header部分  end--*/
+/*-- footer部分  start--*/
+.footer h4,
+p {
+    width: 450px;
+    margin: 10px auto;
+}
+/*-- footer部分  end--*/
 /*-- 游客公共部分  end--*/
+/*-- 用户公共部分  start--*/
+/*-- 用户公共部分  end--*/
+/*-- 管理员公共部分  start--*/
+/*-- 管理员公共部分  end--*/

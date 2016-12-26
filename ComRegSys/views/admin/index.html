@@ -7,6 +7,7 @@
     <title>管理员首页</title>
     <link rel="stylesheet" href="../../static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../static/css/common.css">
+    <script src="../../static/js/holder.min.js"></script>
     <!--[if lt IE 9]>
     <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -14,13 +15,8 @@
 </head>
 <body>
 <!--  header部分  start-->
-<!--  top部分即nav，logo,nav  start-->
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-inverse " role="navigation">
     <div class="container-fluid">
-        <!--  logo部分  start-->
-        <div class="logo navbar-left">
-            logo
-        </div>
         <!--  logo部分  end-->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -29,7 +25,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="#">
+                <!--  logo部分  start-->
+                <div class="logo navbar-left">
+                    logo
+                </div>
+            </a>
         </div>
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav ">
@@ -51,27 +52,46 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-<!--  top部分  end-->
 <!--  header部分  end-->
 <!--  mian部分  start-->
-<div class="main">
-    <div class="container">
-        <div class="fl side">
-            side
-        </div>
-        <div class="fr content">
-            main
-        </div>
-    </div>
-</div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-sm-3">
+                  <div class="panel panel-primary">
+                      <div class="panel-heading text-center">
+                          <h3 class="panel-title ">Panel title</h3>
+                      </div>
+                      <div class="panel-body">
+                      </div>
+                      <ul class="list-group">
+                          <li class="list-group-item"><a href="" class=" btn-block ">01</a></li>
+                          <li class="list-group-item"><a href="" class=" btn-block">02</a></li>
+                          <li class="list-group-item"><a href="" class=" btn-block">03</a></li>
+                          <li class="list-group-item"><a href="" class=" btn-block">04</a></li>
+                          <li class="list-group-item"><a href="" class=" btn-block">05</a></li>
+                      </ul>
+                  </div>
+
+
+              </div>
+              <div class="col-md-9 col-sm-9">
+                <div class="btn btn-block btn-danger ">
+                       header
+                </div>
+                <div class=" ">
+                        main
+                </div>
+              </div>
+          </div>
+      </div>
 <!--  mian部分  end-->
 <!--  footer部分  start-->
-<footer  class="container-fluid footer">
-    <div class="container">
+<footer  class="container-fluid footer bg-danger">
+    <div class="container text-center">
         <h4>
-            <a href="../tourist/index.html">游客首页</a>
-            <a href="../user/index.html">用户首页</a>
-            <a href="../admin/index.html">管理员首页</a>
+            <a href="../tourist/index.html">游客</a>
+            <a href="../user/index.html">用户</a>
+            <a href="../admin/index.html">管理员</a>
         </h4>
         <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>.</p>
         <p>Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
