@@ -1,0 +1,84 @@
+@charset "utf-8";
+//-- 游客公共变量,个别不同自改  start--
+@topw:40px;
+@fonts:12px;
+@comcolor: rgba(229, 229, 229, 0.44);
+@logow:200px;
+@logoh:50px;
+@logoimg:'../imgs/logo.jpg';
+@searchw:250px;
+@border:#000  solid 1px;
+@padding:20px 0 20px 0;
+@testn:main;
+//-- 公共变量  end--
+//======================================
+/*-- 测试样式  start--*/
+div.container{
+  border:@border;
+}
+.@{testn}{
+  min-height:200px;
+}
+header,footer{
+  background: @comcolor;
+}
+/*-- 测试样式  end--*/
+//===================================
+/*-- 公共部分  start--*/
+body{
+  //font-size:@fonts;
+  min-width: 500px;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float: right;
+}
+/*-- 公共部分  end--*/
+//=====================================
+/*-- 游客公共部分  start--*/
+/*-- header部分  start--*/
+/*-- top部分 --*/
+.top{
+  height:@topw;
+  line-height: @topw;
+  color: #c7cccc;
+  background: #343434;
+}
+/*-- logo-search部分 --*/
+.logo{ /*-- logo部分 --*/
+  width: @logow;
+  height: @logoh;
+  a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('@{logoimg}') no-repeat;
+    text-indent: -2000em;
+  }
+}
+.search{      /*-- search部分 --*/
+  width:@searchw;
+  //line-height:@logoh;
+  padding:@padding;
+}
+/*-- nav部分 --*/
+.mynav{}
+/*-- header部分  end--*/
+//================================
+/*-- footer部分  start--*/
+.footer h4,p{
+  width:450px;
+  margin:10px auto;
+}
+/*-- footer部分  end--*/
+/*-- 游客公共部分  end--*/
+//===========================================
+/*-- 用户公共部分  start--*/
+
+/*-- 用户公共部分  end--*/
+//================================================
+/*-- 管理员公共部分  start--*/
+
+/*-- 管理员公共部分  end--*/
